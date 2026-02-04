@@ -55,7 +55,7 @@ function CreatePostPage() {
           </svg>
         </div>
         <div>
-          <div className="text-sm font-medium text-slate-800">r/community</div>
+          <div className="text-sm font-medium text-slate-800">Threadly Community</div>
           <div className="text-xs text-slate-500">Community Feed</div>
         </div>
       </div>

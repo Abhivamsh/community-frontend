@@ -133,7 +133,7 @@ function PostPage() {
               <div className="w-5 h-5 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white text-xs font-bold">
                 {post.author?.username?.[0]?.toUpperCase() || '?'}
               </div>
-              <span className="font-medium text-slate-700">r/community</span>
+              <span className="font-medium text-slate-700">Threadly Community</span>
               <span>•</span>
               <span>Posted by u/{post.author?.username || 'anonymous'}</span>
               <span>{formatTimeAgo(post.created_at)}</span>

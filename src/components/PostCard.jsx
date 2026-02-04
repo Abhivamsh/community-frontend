@@ -52,7 +52,7 @@ function PostCard({ post: initialPost, onVoteUpdate }) {
             {/* Post Meta */}
             <div className="flex items-center gap-1 text-xs text-slate-500 mb-1 flex-wrap">
               <div className="w-4 h-4 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex-shrink-0"></div>
-              <span className="font-medium text-slate-700 hover:underline">r/community</span>
+              <span className="font-medium text-slate-700 hover:underline">Threadly Community</span>
               <span className="text-slate-400">•</span>
               <span className="text-slate-400">Posted by</span>
               <span className="hover:underline">u/{post.author?.username || 'anonymous'}</span>

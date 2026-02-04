@@ -21,7 +21,7 @@ function Sidebar({ leaderboard }) {
             </div>
           </div>
           
-          <h2 className="text-lg font-bold text-slate-800 mb-1">r/community</h2>
+          <h2 className="text-lg font-bold text-slate-800 mb-1">Threadly Community</h2>
           <p className="text-sm text-slate-500 mb-4">Community Feed - Share and discuss with everyone!</p>
           
           <div className="flex gap-8 text-sm mb-4">
@@ -99,7 +99,7 @@ function Sidebar({ leaderboard }) {
             <svg className="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
             </svg>
-            r/community Rules
+            Community Rules
           </h3>
         </div>
         <div className="p-4 space-y-3 text-sm">
@@ -119,7 +119,7 @@ function Sidebar({ leaderboard }) {
       </div>
 
       {/* Footer */}
-      <div className="text-xs text-slate-400 space-y-2">
+      <div className="border-t border-slate-200 pt-4 mt-4 text-xs text-slate-400 space-y-2">
         <div className="flex flex-wrap gap-2">
           <a href="#" className="hover:underline hover:text-blue-500">Help</a>
           <a href="#" className="hover:underline hover:text-blue-500">About</a>
@@ -130,7 +130,7 @@ function Sidebar({ leaderboard }) {
           <a href="#" className="hover:underline hover:text-blue-500">Terms</a>
           <a href="#" className="hover:underline hover:text-blue-500">Privacy Policy</a>
         </div>
-        <p>Community Feed © 2026. All rights reserved</p>
+        <p>Threadly © 2026. All rights reserved</p>
       </div>
     </div>
   );

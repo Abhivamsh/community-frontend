@@ -15,7 +15,7 @@ function Header() {
               <path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clipRule="evenodd" />
             </svg>
           </div>
-          <span className="text-slate-800 font-bold text-xl hidden sm:block">playto</span>
+          <span className="text-slate-800 font-bold text-xl hidden sm:block">Threadly</span>
         </Link>
 
         {/* Search Bar */}
@@ -30,7 +30,7 @@ function Header() {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search Playto"
+              placeholder="Search Threadly"
               className="w-full bg-slate-100 border border-slate-300 rounded-full py-2 pl-10 pr-4 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:bg-white transition-colors"
             />
           </div>
