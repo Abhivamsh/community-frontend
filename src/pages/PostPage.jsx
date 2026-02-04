@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { fetchPostDetail, likePost, createComment } from '../api';
 import CommentThread from '../components/CommentThread';
-import VoteButtons from '../components/VoteButtons';
+import LikeButton from '../components/VoteButtons';
 
 function PostPage() {
   const { postId } = useParams();
@@ -32,12 +32,12 @@ function PostPage() {
     loadPost();
   }, [postId]);
 
-  const handleVote = async (userName) => {
+  const handleLike = async (userName) => {
     try {
       await likePost(postId, userName);
       loadPost();
     } catch (err) {
-      console.error('Failed to vote:', err);
+      console.error('Failed to like:', err);
       throw err;
     }
   };
@@ -117,11 +117,11 @@ function PostPage() {
       {/* Post */}
       <div className="bg-white rounded-md border border-slate-200 shadow-sm">
         <div className="flex">
-          {/* Vote Column */}
-          <div className="w-10 bg-slate-50 rounded-l-md flex flex-col items-center py-3">
-            <VoteButtons 
+          {/* Like Column */}
+          <div className="w-14 bg-slate-50 rounded-l-md flex flex-col items-center justify-center py-4">
+            <LikeButton 
               score={post.like_count || 0}
-              onVote={handleVote}
+              onLike={handleLike}
               size="lg"
             />
           </div>
